@@ -46,11 +46,12 @@
                     android:text="@string/app_title"
                     android:textColor="@color/colorBlack"
                     android:textSize="@dimen/large_text_size" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/global_margin"
                     android:layout_below="@+id/title"
+                    android:layout_marginLeft="@dimen/global_margin"
                     android:layout_toRightOf="@+id/img"
                     android:text="@string/app_desc"
                     android:textColor="@color/colorBlack"
@@ -62,8 +63,8 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="vertical"
                 android:gravity="center"
+                android:orientation="vertical"
                 android:padding="@dimen/global_half_padding">
 
 
@@ -216,18 +217,23 @@
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_margin="@dimen/global_margin"
-                    android:gravity="right"
-                    android:orientation="horizontal">
+                    android:layout_margin="@dimen/global_margin">
 
+                    <ImageButton
+                        android:id="@+id/btn_language"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="4dp"
+                        android:background="@drawable/ic_stat_language"
+                        android:visibility="visible" />
 
                     <ImageButton
                         android:id="@+id/btnsetting"
                         android:layout_width="25dp"
                         android:layout_height="25dp"
-                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentEnd="true"
                         android:layout_marginLeft="4dp"
-                        android:layout_weight="1"
                         android:background="@drawable/ic_nut_icon"
                         android:visibility="visible" />
                 </RelativeLayout>
