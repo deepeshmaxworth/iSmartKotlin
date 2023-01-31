@@ -10,10 +10,6 @@
     android:background="@color/colorGrey"
     android:orientation="vertical">
 
-    <include
-        android:id="@+id/header"
-        layout="@layout/layout_header_base"
-        android:visibility="gone" />
 
     <FrameLayout
         android:layout_width="match_parent"
@@ -29,19 +25,47 @@
             android:background="@color/menucolor"
             android:orientation="vertical">
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="top|left"
-                android:background="@drawable/quater_circle" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|left"
+                    android:background="@drawable/quater_circle" />
+
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/global_margin"
+                    android:layout_toRightOf="@+id/img"
+                    android:text="@string/app_title"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/large_text_size" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/global_margin"
+                    android:layout_below="@+id/title"
+                    android:layout_toRightOf="@+id/img"
+                    android:text="@string/app_desc"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/global_medium_text_size" />
+
+            </RelativeLayout>
 
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:gravity="center"
                 android:orientation="vertical"
+                android:gravity="center"
                 android:padding="@dimen/global_half_padding">
+
 
                 <LinearLayout
                     android:id="@+id/layout_username"
@@ -63,6 +87,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:background="@android:color/transparent"
+                        android:gravity="center_vertical"
                         android:hint="@string/hint_user_name"
                         android:inputType="textEmailAddress"
                         android:maxLength="25"
@@ -92,6 +117,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:background="@android:color/transparent"
+                        android:gravity="center_vertical"
                         android:hint="@string/hint_password"
                         android:inputType="textPassword"
                         android:maxLength="20"
@@ -104,7 +130,7 @@
                 <LinearLayout
                     android:id="@+id/LayoutCaptch"
                     android:layout_width="match_parent"
-                    android:layout_height="48dp"
+                    android:layout_height="45dp"
                     android:layout_margin="@dimen/global_margin"
                     android:gravity="center"
 
@@ -113,7 +139,7 @@
                     <TextView
                         android:id="@+id/tv_captcha"
                         android:layout_width="match_parent"
-                        android:layout_height="30dp"
+                        android:layout_height="40dp"
                         android:layout_gravity="center"
                         android:layout_marginRight="4dp"
                         android:layout_weight="1"
@@ -143,10 +169,10 @@
                         android:layout_gravity="center"
                         android:layout_weight="1"
                         android:background="@drawable/edit_text_oval_shape_white"
+                        android:gravity="center"
                         android:hint="Enter Captcha"
                         android:inputType="textEmailAddress"
                         android:maxLength="6"
-                        android:padding="5dp"
                         android:textAlignment="center"
                         android:textColor="@color/colorBlack"
                         android:textColorHint="@color/menucolor"
@@ -223,15 +249,5 @@
 
         </RelativeLayout>
 
-        <TextView
-            android:id="@+id/tv_title"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="end"
-            android:layout_marginRight="@dimen/global_half_margin"
-            android:text="@string/indian_oil"
-            android:textColor="@color/colorDarkBlue"
-            android:textSize="14sp"
-            android:textStyle="bold" />
     </FrameLayout>
 </LinearLayout>
