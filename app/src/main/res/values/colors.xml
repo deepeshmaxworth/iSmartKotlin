@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#E46713</color>
+    <color name="colorAccent">#FFFFFF</color>
+    <color name="TextColor">#000003</color>
+    <color name="menucolor">#E46713</color>
+    <color name="listcolor">#8f8fae</color>
+    <color name="colorGrey">#C9CAC8</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorGrey1">#FFE8E9EA</color>
+    <color name="colorGrey2">#FFF3F4F5</color>
+    <color name="colorGrey3">#8E7E7B</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorDarkBlue">#02164f</color>
+    <color name="colorYellow">#FFC107</color>
+</resources>
