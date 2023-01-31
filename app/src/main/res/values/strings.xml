@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">iSMART PANIPAT</string>
-
+    <string name="app_title">iSMART App</string>
+    <string name="app_desc">Barcode Tracking System PTA</string>
     <string name="title_activity_setting">Setting</string>
     <string name="title_activity_menu">MenuActvity</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
