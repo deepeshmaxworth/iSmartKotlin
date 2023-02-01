@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace 'com.mespl.ismartpanipat'
-    compileSdk 32
+    compileSdk 33
 
     defaultConfig {
         applicationId "com.mespl.ismartpanipat"
         minSdk 19
-        targetSdk 32
+        targetSdk 33
         versionCode 1
         versionName "1.0"
 
@@ -27,8 +27,14 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+
+
     kotlinOptions {
         jvmTarget = '1.8'
+    }
+
+    buildFeatures {
+        viewBinding true
     }
 }
 

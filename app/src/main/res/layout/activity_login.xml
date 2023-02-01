@@ -44,7 +44,8 @@
                     android:layout_marginLeft="@dimen/global_margin"
                     android:layout_toRightOf="@+id/img"
                     android:text="@string/app_title"
-                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorWhite"
                     android:textSize="@dimen/large_text_size" />
 
                 <TextView
@@ -54,7 +55,7 @@
                     android:layout_marginLeft="@dimen/global_margin"
                     android:layout_toRightOf="@+id/img"
                     android:text="@string/app_desc"
-                    android:textColor="@color/colorBlack"
+                    android:textColor="@color/colorWhite"
                     android:textSize="@dimen/global_medium_text_size" />
 
             </RelativeLayout>
@@ -186,7 +187,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/sample_2_layout_2_height"
                     android:layout_margin="@dimen/global_margin"
-                    android:background="@drawable/round_corner_button"
+                    android:onClick="loginClick"
+                    android:background="@drawable/round_corner_button_yellow"
                     android:gravity="center">
 
                     <TextView
@@ -202,7 +204,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/sample_2_layout_2_height"
                     android:layout_margin="@dimen/global_margin"
-                    android:background="@drawable/round_corner_button_yellow"
+                    android:onClick="syncClick"
+                    android:background="@drawable/round_corner_button"
                     android:gravity="center">
 
                     <TextView
@@ -223,6 +226,7 @@
                         android:id="@+id/btn_language"
                         android:layout_width="25dp"
                         android:layout_height="25dp"
+                        android:onClick="langClick"
                         android:layout_alignParentLeft="true"
                         android:layout_marginLeft="4dp"
                         android:background="@drawable/ic_stat_language"
@@ -232,6 +236,7 @@
                         android:id="@+id/btnsetting"
                         android:layout_width="25dp"
                         android:layout_height="25dp"
+                        android:onClick="settingClick"
                         android:layout_alignParentEnd="true"
                         android:layout_marginLeft="4dp"
                         android:background="@drawable/ic_nut_icon"
