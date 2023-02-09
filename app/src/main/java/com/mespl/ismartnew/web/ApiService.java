@@ -1,4 +1,4 @@
-package com.mespl.ismartpanipat.web;
+package com.mespl.ismartnew.web;
 
 public interface ApiService {
 

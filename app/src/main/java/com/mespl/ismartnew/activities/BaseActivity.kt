@@ -1,4 +1,4 @@
-package com.mespl.ismartpanipat.activities
+package com.mespl.ismartnew.activities
 
 import android.Manifest
 import android.content.Context

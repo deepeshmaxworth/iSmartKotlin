@@ -1,8 +1,9 @@
-package com.mespl.ismartpanipat.activities
+package com.mespl.ismartnew.activities
 
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.widget.LinearLayout
 import com.mespl.ismartpanipat.databinding.ActivityLoginBinding
@@ -22,6 +23,7 @@ class LoginActivity : BaseActivity() {
         this.also { mCtx = it }
         val btnlogin: LinearLayout = binding.btnlogin
     }
+
 
     fun loginClick(view: View) {
 
